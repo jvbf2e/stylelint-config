@@ -1,0 +1,21 @@
+{
+  "name": "@jvbf2e/stylelint-config",
+  "version": "0.0.1",
+  "description": "Stylelint Config",
+  "main": "index.js",
+  "keywords": [
+    "javascript",
+    "stylelint",
+    "stylelint-config"
+  ],
+  "author": "jvb",
+  "license": "MIT",
+  "dependencies": {
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-prettier": "^2.0.0"
+  }
+}
