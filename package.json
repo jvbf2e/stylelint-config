@@ -1,21 +1,60 @@
 {
-  "name": "@jvbf2e/stylelint-config",
-  "version": "0.0.1",
-  "description": "Stylelint Config",
+  "name": "@jvbjs/stylelint-config",
+  "version": "1.0.3",
+  "description": "Stylelint config",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./scss": "./scss.js",
+    "./less": "./less.js",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jvbf2e/stylelint-config.git"
+  },
   "keywords": [
-    "javascript",
     "stylelint",
-    "stylelint-config"
+    "stylelint-config",
+    "sass",
+    "scss",
+    "less"
   ],
-  "author": "jvb",
+  "author": "luyj <vvimoink@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jvbf2e/stylelint-config/issues"
+  },
+  "files": [
+    "LICENSE",
+    "default.js",
+    "index.js",
+    "scss.js",
+    "less.js"
+  ],
+  "scripts": {},
   "dependencies": {
-    "stylelint": "^14.9.1",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-recess-order": "^3.0.0",
-    "stylelint-config-recommended-vue": "^1.4.0",
-    "stylelint-config-standard": "^26.0.0",
-    "stylelint-prettier": "^2.0.0"
+    "@stylelint/postcss-css-in-js": "^0.38.0",
+    "postcss-html": "^1.5.0",
+    "postcss-less": "^6.0.0",
+    "postcss-markdown": "^1.2.0",
+    "postcss-scss": "^4.0.6",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recess-order": "^4.3.0",
+    "stylelint-config-recommended": "^13.0.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "stylelint-less": "^1.0.8"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.0",
+    "stylelint": "^15.10.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.27",
+    "stylelint": "^15.10.2"
   }
 }
